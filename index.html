@@ -10,10 +10,23 @@
         <div id="root"></div>
     </body>
     <script>
+        const jsn = [
+            {
+                name: "Arpan",
+                post: "csit"
+            },
+            {
+                name: "Aavash",
+                post: "er asp.net"
+            }
+        ]
         window.onload = () => {
             const qry = document.querySelector("#root");
             qry.append(`<h1>${Math.random(0, 100)}</h1>`);
-            Math.random(0, 10) > 0 ? alert('Greater then 0') : alert("Not")
+            for (let i = 0; i <= jsn.length - 1; i++) {
+                qry.append(`name: ${jsn[i].name}`)
+                qry.append(`post: ${jsn[i].post}`)
+            }
         }
     </script>
 </html>
