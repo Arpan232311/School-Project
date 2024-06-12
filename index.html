@@ -12,7 +12,8 @@
     <script>
         window.onload = () => {
             const qry = document.querySelector("#root");
-            qry.append(`<h1>${Math.random(0, 100)}</h1>`)
+            qry.append(`<h1>${Math.random(0, 100)}</h1>`);
+            Math.random(0, 10) > 0 ? alert('Greater then 0') : alert("Not")
         }
     </script>
 </html>
